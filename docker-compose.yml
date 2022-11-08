@@ -1,0 +1,72 @@
+version: "3"
+
+services:
+  react-app: 
+    build: "./frontend"  
+    ports: 
+      - "${PORT_REACT}"
+    depends_on:
+      - api
+  api:
+    build: "./backend"
+    ports:
+      - "${PORT_API}"
+    links:
+      - db_mongo
+      - db_psql
+      - db_psql2
+      - db_psql3
+  db_mongo: 
+    build: "./db"
+    ports: 
+      - "${PORT_MONGO}" 
+    volumes:
+      - "${DIR_NO_SQL}" 
+      - "${DIR_NO_SQL_LOG}"
+  db_psql:
+    image: postgres:14.5
+    restart: always
+    volumes: 
+     - "${DIR_SQL}"
+    ports: 
+     - "${PORT_PSQL}"
+    environment:
+     - DATABASE_HOST=127.0.0.1
+     - POSTGRES_USER=chocolateros
+     - POSTGRES_PASSWORD=jalados
+     - POSTGRES_DB=ventasDB
+  db_psql2:
+    image: postgres:14.5
+    restart: always
+    volumes: 
+     - "${DIR_SQL2}"
+    ports: 
+      - "${PORT_PSQL2}"
+    environment:
+     - DATABASE_HOST=127.0.0.1
+     - POSTGRES_USER=chocolateros
+     - POSTGRES_PASSWORD=jalados
+     - POSTGRES_DB=almacenDB
+  db_psql3:
+    image: postgres:14.5
+    restart: always
+    volumes: 
+     - "${DIR_SQL3}"
+    ports: 
+      - "${PORT_PSQL3}"
+    environment:
+     - DATABASE_HOST=127.0.0.1
+     - POSTGRES_USER=chocolateros
+     - POSTGRES_PASSWORD=jalados
+     - POSTGRES_DB=contabilidadDB
+  pgadmin:
+    image: dpage/pgadmin4
+    environment:
+      PGADMIN_DEFAULT_EMAIL: "hola@gmail.com"
+      PGADMIN_DEFAULT_PASSWORD: "123"
+    ports: 
+      - "${PORT_PGADMIN}" 
+    depends_on:
+      - db_psql
+      - db_psql2
+      - db_psql3
