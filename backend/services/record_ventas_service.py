@@ -1,4 +1,4 @@
-from flask import jsonify, request
+from flask import abort, jsonify, request 
 import database as db_config
 import requests
 import json
@@ -8,14 +8,17 @@ from public_functions.functions import generate_limits
 db = db_config.db_sql
 
 def add_record():
-    transaction_id = request.json['transaction_id']
-    description = request.json['description']
-    transaction_date = request.json['transaction_date']
-    value = request.json['value']
-    record = RecordVentas(transaction_id, description, value, transaction_date)
-    db.session.add(record)
-    db.session.commit()
-    return record_schema.jsonify(record) 
+    try: 
+        transaction_id = request.json['transaction_id']
+        description = request.json['description']
+        transaction_date = request.json['transaction_date']
+        value = request.json['value']
+        record = RecordVentas(transaction_id, description, value, transaction_date)
+        db.session.add(record)
+        db.session.commit()
+        return record_schema.jsonify(record) 
+    except: 
+        abort(400)
 
 def get_records(): 
     all_records = RecordVentas.query.all()
