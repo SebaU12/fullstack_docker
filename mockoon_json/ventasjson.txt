@@ -1,0 +1,80 @@
+{
+    "emisor":"Mauro",
+    "fecha_emision":"2017-09-30",
+    "monto_total_operacion": 100,
+    "id_venta":44372 , // identificador para registrar la venta 
+    "producto":"Harry Potter",
+    "cantidades": 1,
+},
+{
+    "emisor":"Diego",
+    "fecha_emision":"2017-10-31",
+    "monto_total_operacion": 50,
+    "id_venta":44373 , // identificador para registrar la venta 
+    "producto":"La ciudad de los perros",
+    "cantidades": 1,
+},
+{
+    "emisor":"Beatriz",
+    "fecha_emision":"2017-09-10",
+    "monto_total_operacion": 40,
+    "id_venta":44374 , // identificador para registrar la venta 
+    "producto":"Ojos de mi princesa",
+    "cantidades": 1,
+},
+{
+    "emisor":"Sebastian",
+    "fecha_emision":"2018-10-31",
+    "monto_total_operacion": 80,
+    "id_venta":44375 , // identificador para registrar la venta 
+    "producto":"Metamorfosis",
+    "cantidades": 1,
+},
+{
+    "emisor":"Christofer",
+    "fecha_emision":"2019-10-31",
+    "monto_total_operacion": 150,
+    "id_venta":44376 , // identificador para registrar la venta 
+    "producto":"Crepusculo",
+    "cantidades": 1,
+},
+{
+    "emisor":"Juan",
+    "fecha_emision":"2021-09-25",
+    "monto_total_operacion": 100,
+    "id_venta":44377 , // identificador para registrar la venta 
+    "producto":"Lord of the rings",
+    "cantidades": 1,
+},
+{
+    "emisor":"Pepe",
+    "fecha_emision":"2022-08-31",
+    "monto_total_operacion": 100,
+    "id_venta":44378 , // identificador para registrar la venta 
+    "producto":"Harry Potter 2",
+    "cantidades": 1,
+},
+{
+    "emisor":"Wanly",
+    "fecha_emision":"2018-09-10",
+    "monto_total_operacion": 150,
+    "id_venta":44379 , // identificador para registrar la venta 
+    "producto":"La odisea",
+    "cantidades": 1,
+},
+{
+    "emisor":"Andrea",
+    "fecha_emision":"2021-09-10",
+    "monto_total_operacion": 300,
+    "id_venta":44380 , // identificador para registrar la venta 
+    "producto":"La odisea",
+    "cantidades": 2,
+},
+{
+    "emisor":"Luis",
+    "fecha_emision":"2022-03-10",
+    "monto_total_operacion": 100,
+    "id_venta":44381 , // identificador para registrar la venta 
+    "producto":"El diario de dross",
+    "cantidades": 2,
+}

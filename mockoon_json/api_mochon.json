@@ -1,0 +1,97 @@
+{
+  "uuid": "dc3d1a6f-65ed-45aa-819e-e2dd35c125a0",
+  "lastMigration": 24,
+  "name": "Api mochon",
+  "endpointPrefix": "",
+  "latency": 0,
+  "port": 3001,
+  "hostname": "0.0.0.0",
+  "routes": [
+    {
+      "uuid": "59537451-661e-4334-bf8b-dce5d3a3e63e",
+      "documentation": "",
+      "method": "get",
+      "endpoint": "ventas",
+      "responses": [
+        {
+          "uuid": "f2284c3d-eda4-4c28-86ce-07c5ae912804",
+          "body": "[\n{\n    \"emisor\":\"Mauro\",\n    \"fecha_emision\":\"2017-09-30\",\n    \"monto_total_operacion\": 100,\n    \"id_venta\":44372, \n    \"producto\":\"Harry Potter\",\n    \"cantidades\": 1\n},\n{\n    \"emisor\":\"Diego\",\n    \"fecha_emision\":\"2017-10-31\",\n    \"monto_total_operacion\": 50,\n    \"id_venta\":44373 , \n    \"producto\":\"La ciudad de los perros\",\n    \"cantidades\": 1\n},\n{\n    \"emisor\":\"Beatriz\",\n    \"fecha_emision\":\"2017-09-10\",\n    \"monto_total_operacion\": 40,\n    \"id_venta\":44374 , \n    \"producto\":\"Ojos de mi princesa\",\n    \"cantidades\": 1\n},\n{\n    \"emisor\":\"Sebastian\",\n    \"fecha_emision\":\"2018-10-31\",\n    \"monto_total_operacion\": 80,\n    \"id_venta\":44375 , \n    \"producto\":\"Metamorfosis\",\n    \"cantidades\": 1\n},\n{\n    \"emisor\":\"Christofer\",\n    \"fecha_emision\":\"2019-10-31\",\n    \"monto_total_operacion\": 150,\n    \"id_venta\":44376 , \n    \"producto\":\"Crepusculo\",\n    \"cantidades\": 1\n},\n{\n    \"emisor\":\"Juan\",\n    \"fecha_emision\":\"2021-09-25\",\n    \"monto_total_operacion\": 100,\n    \"id_venta\":44377 , \n    \"producto\":\"Lord of the rings\",\n    \"cantidades\": 1\n},\n{\n    \"emisor\":\"Pepe\",\n    \"fecha_emision\":\"2022-08-31\",\n    \"monto_total_operacion\": 100,\n    \"id_venta\":44378 , \n    \"producto\":\"Harry Potter 2\",\n    \"cantidades\": 1\n},\n{\n    \"emisor\":\"Wanly\",\n    \"fecha_emision\":\"2018-09-10\",\n    \"monto_total_operacion\": 150,\n    \"id_venta\":44379 , \n    \"producto\":\"La odisea\",\n    \"cantidades\": 1\n},\n{\n    \"emisor\":\"Andrea\",\n    \"fecha_emision\":\"2021-09-10\",\n    \"monto_total_operacion\": 300,\n    \"id_venta\":44380 , \n    \"producto\":\"La odisea\",\n    \"cantidades\": 2\n},\n{\n    \"emisor\":\"Luis\",\n    \"fecha_emision\":\"2022-03-10\",\n    \"monto_total_operacion\": 100,\n    \"id_venta\":44381 , \n    \"producto\":\"El diario de dross\",\n    \"cantidades\": 2\n}\n]\n",
+          "latency": 0,
+          "statusCode": 200,
+          "label": "",
+          "headers": [],
+          "bodyType": "INLINE",
+          "filePath": "",
+          "databucketID": "",
+          "sendFileAsBody": false,
+          "rules": [],
+          "rulesOperator": "OR",
+          "disableTemplating": false,
+          "fallbackTo404": false,
+          "default": true
+        }
+      ],
+      "enabled": true,
+      "responseMode": null
+    },
+    {
+      "uuid": "123904eb-5dd9-42d3-8edd-6735ed0a0555",
+      "documentation": "",
+      "method": "get",
+      "endpoint": "compras",
+      "responses": [
+        {
+          "uuid": "82c78987-d8fd-4eea-b2e1-e92145ab8296",
+          "body": "[\n{\n   \"transation_id\":\"551\",\n   \"fecha_recepcion\": \"11/08/2022\",\n   \"nombre_proveedor\": \"ninka\",\n   \"condiciones_pago\": \"condicion\",\n   \"descripcion\": \"inmuebles\",\n   \"costo_total\": \"13000\",\n   \"nombre_receptor\": \"mauro\"\n},\n{\n   \"transation_id\":\"552\",\n   \"fecha_recepcion\": \"12/08/2022\",\n   \"nombre_proveedor\": \"ninka\",\n   \"condiciones_pago\": \"condicion\",\n   \"descripcion\": \"inmuebles y libros\",\n   \"costo_total\": \"19000\",\n   \"nombre_receptor\": \"diego\"\n},\n{\n   \"transation_id\":\"553\",\n   \"fecha_recepcion\": \"16/08/2022\",\n   \"nombre_proveedor\": \"ninka\",\n   \"condiciones_pago\": \"condicion\",\n   \"descripcion\": \"computadoras\",\n   \"costo_total\": \"5000000\",\n   \"nombre_receptor\": \"sebas\"\n},\n{\n   \"transation_id\":\"554\",\n   \"fecha_recepcion\": \"20/08/2022\",\n   \"nombre_proveedor\": \"ninka\",\n   \"condiciones_pago\": \"condicion\",\n   \"descripcion\": \"libros\",\n   \"costo_total\": \"3000\",\n   \"nombre_receptor\": \"mauro\"\n},\n{\n   \"transation_id\":\"555\",\n   \"fecha_recepcion\": \"21/08/2022\",\n   \"nombre_proveedor\": \"ninka\",\n   \"condiciones_pago\": \"condicion\",\n   \"descripcion\": \"inmuebles\",\n   \"costo_total\": \"13600\",\n   \"nombre_receptor\": \"diego\"\n},\n{\n   \"transation_id\":\"556\",\n   \"fecha_recepcion\": \"25/08/2022\",\n   \"nombre_proveedor\": \"ninka\",\n   \"condiciones_pago\": \"condicion\",\n   \"descripcion\": \"juegos de mesa\",\n   \"costo_total\": \"9000\",\n   \"nombre_receptor\": \"sebas\"\n},\n{\n   \"transation_id\":\"557\",\n   \"fecha_recepcion\": \"28/08/2022\",\n   \"nombre_proveedor\": \"ninka\",\n   \"condiciones_pago\": \"condicion\",\n   \"descripcion\": \"computadoras\",\n   \"costo_total\": \"6000\",\n   \"nombre_receptor\": \"mauro\"\n},\n{\n   \"transation_id\":\"558\",\n   \"fecha_recepcion\": \"30/08/2022\",\n   \"nombre_proveedor\": \"ninka\",\n   \"condiciones_pago\": \"condicion\",\n   \"descripcion\": \"libros\",\n   \"costo_total\": \"300\",\n   \"nombre_receptor\": \"diego\"\n},\n{\n   \"transation_id\":\"559\",\n   \"fecha_recepcion\": \"1/09/2022\",\n   \"nombre_proveedor\": \"ninka\",\n   \"condiciones_pago\": \"condicion\",\n   \"descripcion\": \"escritorios\",\n   \"costo_total\": \"13000\",\n   \"nombre_receptor\": \"sebas\"\n},\n{\n   \"transation_id\":\"560\",\n   \"fecha_recepcion\": \"5/09/2022\",\n   \"nombre_proveedor\": \"ninka\",\n   \"condiciones_pago\": \"condicion\",\n   \"descripcion\": \"libros\",\n   \"costo_total\": \"700\",\n   \"nombre_receptor\": \"mauro\"\n},\n{\n   \"transation_id\":\"561\",\n   \"fecha_recepcion\": \"11/09/2022\",\n   \"nombre_proveedor\": \"ninka\",\n   \"condiciones_pago\": \"condicion\",\n   \"descripcion\": \"juegos de mesa\",\n   \"costo_total\": \"3000\",\n   \"nombre_receptor\": \"diego\"\n},\n{\n   \"transation_id\":\"562\",\n   \"fecha_recepcion\": \"17/09/2022\",\n   \"nombre_proveedor\": \"ninka\",\n   \"condiciones_pago\": \"condicion\",\n   \"descripcion\": \"inmuebles\",\n   \"costo_total\": \"8000\",\n   \"nombre_receptor\": \"sebas\"\n},\n{\n   \"transation_id\":\"563\",\n   \"fecha_recepcion\": \"19/09/2022\",\n   \"nombre_proveedor\": \"ninka\",\n   \"condiciones_pago\": \"condicion\",\n   \"descripcion\": \"inmuebles y computadoras\",\n   \"costo_total\": \"130000\",\n   \"nombre_receptor\": \"mauro\"\n}\n]",
+          "latency": 0,
+          "statusCode": 200,
+          "label": "",
+          "headers": [],
+          "bodyType": "INLINE",
+          "filePath": "",
+          "databucketID": "",
+          "sendFileAsBody": false,
+          "rules": [],
+          "rulesOperator": "OR",
+          "disableTemplating": false,
+          "fallbackTo404": false,
+          "default": true
+        }
+      ],
+      "enabled": true,
+      "responseMode": null
+    }
+  ],
+  "proxyMode": false,
+  "proxyHost": "",
+  "proxyRemovePrefix": false,
+  "tlsOptions": {
+    "enabled": false,
+    "type": "CERT",
+    "pfxPath": "",
+    "certPath": "",
+    "keyPath": "",
+    "caPath": "",
+    "passphrase": ""
+  },
+  "cors": true,
+  "headers": [
+    {
+      "key": "Content-Type",
+      "value": "application/json"
+    }
+  ],
+  "proxyReqHeaders": [
+    {
+      "key": "",
+      "value": ""
+    }
+  ],
+  "proxyResHeaders": [
+    {
+      "key": "",
+      "value": ""
+    }
+  ],
+  "data": []
+}

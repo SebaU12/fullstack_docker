@@ -1,0 +1,61 @@
+.container-all {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.fix-title{
+    display: block;
+    text-align: center;
+}
+
+.fix-title p{
+    margin: 0;
+    padding: 0;
+}
+
+.container-t-graph {
+    display: block;
+    height: 250px;
+    width: 200px;
+    margin: 50px;
+    padding: 0;
+}
+
+.container{
+    display: flex;
+}
+
+.debito{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.credito{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.data {
+    display: block;
+}
+
+.container-T {
+    display: flex;
+}
+
+.divide-container{
+    display: block;
+    height: 200px;
+    width: 15px;
+    background-color: black;
+}
+
+.divide-container-top{
+    display: block;
+    height: 10px;
+    width: 100px;
+    background-color: black;
+}

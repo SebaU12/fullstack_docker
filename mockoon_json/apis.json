@@ -1,0 +1,70 @@
+{
+    "uuid": "6a49118a-fbc6-4ace-8000-98a072e8ae82",
+    "lastMigration": 24,
+    "name": "Test compras",
+    "endpointPrefix": "",
+    "latency": 0,
+    "port": 1500,
+    "hostname": "0.0.0.0",
+    "routes": [
+        {
+            "uuid": "9b18b2cf-e33e-4573-90d3-81e38eb44e27",
+            "documentation": "",
+            "method": "get",
+            "endpoint": "",
+            "responses": [
+                {
+                    "uuid": "7064e5e2-8809-4e5a-9e6d-06bee67db49a",
+                    "body": "{\n  \"hola\"; \"Esta es la respuesta\",\n  \"adios\": \"cosas\"\n}",
+                    "latency": 0,
+                    "statusCode": 200,
+                    "label": "",
+                    "headers": [],
+                    "bodyType": "INLINE",
+                    "filePath": "",
+                    "databucketID": "",
+                    "sendFileAsBody": false,
+                    "rules": [],
+                    "rulesOperator": "OR",
+                    "disableTemplating": false,
+                    "fallbackTo404": false,
+                    "default": true
+                }
+            ],
+            "enabled": true,
+            "responseMode": null
+        }
+    ],
+    "proxyMode": false,
+    "proxyHost": "",
+    "proxyRemovePrefix": false,
+    "tlsOptions": {
+        "enabled": false,
+        "type": "CERT",
+        "pfxPath": "",
+        "certPath": "",
+        "keyPath": "",
+        "caPath": "",
+        "passphrase": ""
+    },
+    "cors": true,
+    "headers": [
+        {
+            "key": "Content-Type",
+            "value": "application/json"
+        }
+    ],
+    "proxyReqHeaders": [
+        {
+            "key": "",
+            "value": ""
+        }
+    ],
+    "proxyResHeaders": [
+        {
+            "key": "",
+            "value": ""
+        }
+    ],
+    "data": []
+}

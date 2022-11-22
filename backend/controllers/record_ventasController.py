@@ -1,5 +1,5 @@
 import database as db_config
-from services.record_ventas_service import add_record, get_records, get_records_month 
+from services.record_ventas_service import add_record, get_records, get_records_month, get_file 
 
 db=db_config.db_sql
 
@@ -14,3 +14,6 @@ def list_records_month(year, month):
         return "Mes invalido"
     else: 
         return get_records_month(int(year), int(month))
+
+def get_file_ventas(file_id):
+    return get_file(file_id) 

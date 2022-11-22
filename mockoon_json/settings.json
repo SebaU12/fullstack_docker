@@ -1,0 +1,26 @@
+{
+  "welcomeShown": true,
+  "bannerDismissed": [],
+  "logSizeLimit": 10000,
+  "maxLogsPerEnvironment": 50,
+  "truncateRouteName": true,
+  "mainMenuSize": 100,
+  "secondaryMenuSize": 200,
+  "fakerLocale": "en",
+  "fakerSeed": null,
+  "lastChangelog": "1.21.1",
+  "environments": [
+    {
+      "uuid": "80b4c6d0-aedd-4862-9da5-7aa13b530965",
+      "path": "/home/sebau/.config/mockoon/storage/demo.json"
+    },
+    {
+      "uuid": "6a49118a-fbc6-4ace-8000-98a072e8ae82",
+      "path": "/home/sebau/Escritorio/universidad/6to_ciclo/ing_software/enviro/test_compras.json"
+    }
+  ],
+  "enableTelemetry": true,
+  "storagePrettyPrint": true,
+  "fileWatcherEnabled": "disabled",
+  "dialogWorkingDir": "/home/sebau/Escritorio/universidad/6to_ciclo/ing_software/enviro"
+}
